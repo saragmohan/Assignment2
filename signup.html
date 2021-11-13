@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Fira+Sans:ital,wght@1,300&family=Irish+Grover&display=swap"
+        rel="stylesheet">
+    <script src="JS/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <body class="signup-bg" background="Images/thrissur_pooram_3_330.jpg">
+        <form class="signup-form" action="login.html" onsubmit="return svalidate()">
+            <h2 id=form-signup-h>Sign Up</h2>
+            <br>
+            <div class="singup-cont">
+                <label>User Name</label>
+                <input type="Text" Placeholder="Enter your user name" id="name" class="signup-cont-1">
+            </div>
+
+            <div class="singup-cont">
+                <label>Email Id</label>
+                <input type="email" Placeholder="Enter your email" id="semail" class="signup-cont-1" required>
+            </div>
+
+            <div class="singup-cont">
+                <label>Mobile No.</label>
+                <input type="text" Placeholder="Enter your mobile number" id="phone" class="signup-cont-1">
+            </div>
+
+            <div class="signup-cont">
+                <label>Password</label>
+                <input type="password" placeholder="Enter your password" id="password1" class="signup-cont-1"
+                    onkeyup="return passwordChanged()">
+                <br>
+                <span id="strength"
+                    style="background-color: rgba(2, 0, 0, 0.34); border: blue;height: 10px ; width: 50px;">-</span>
+            </div>
+
+            <div class="signup-cont">
+                <label>Retype Password</label>
+                <input type="password" placeholder="Retype your password" id="password2" class="signup-cont-1">
+            </div>
+            <br>
+            <div>
+                <button id="submit">Submit</button>
+            </div>
+        </form>
+
+        <script src="JS/main.js"></script>
+    </body>
+
+</html>
